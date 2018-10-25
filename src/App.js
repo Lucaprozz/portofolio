@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import './App.scss';
-
+import Home from './routes/Home'
+import Projects from './routes/Projects'
+import About from './routes/About'
 
 class App extends Component {
   render() {
-    return (
-        <div>
-            <h1>Hier komt de routing ah niffauww</h1>
-            <h2>ik ga ook ff de provider maken zometeen</h2>
-        </div>
+      return (
+        <BrowserRouter>
+            <Switch>
+                <Route exact path='/' component={Home}></Route>
+                <Route exact path='/Projects' component={Projects}></Route>
+                <Route exact path='/About' component={About}></Route>
+            </Switch>
+        </BrowserRouter>
     );
   }
 }
