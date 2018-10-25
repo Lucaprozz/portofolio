@@ -2,4 +2,17 @@ $mainColor:red;
 
 .header{
     background-color: $mainColor;
+
+}
+.nav{
+
+}
+.navigation{
+
+    &__list{
+        background-color: test;
+    }
+    &__link{
+        background-color: test;
+    }
 }
