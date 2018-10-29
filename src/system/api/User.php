@@ -22,19 +22,18 @@ $num = $result->rowCount();
 if($num > 0) {
     // Post array
     $posts_arr = array();
-    $posts_arr['data'] = array();
 
     while($row = $result->fetch(PDO::FETCH_ASSOC)) {
         extract($row);
 
         $post_item = array(
-            'user_id'       => $user_id,
-            'user_username' => $user_username,
-            'user_password' => $user_password
+            'id'       => $user_id,
+            'username' => $user_username,
+            'password' => $user_password
         );
 
         // Push to 'data'
-        array_push($posts_arr['data'], $post_item);
+        array_push($posts_arr, $post_item);
     }
 
     //Turn to JSON & output
