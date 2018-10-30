@@ -1,20 +1,15 @@
 export function PostData(type, userData){
     
-    let BaseUrl = 'https://api.thewallscript.com/restful'
+    let BaseUrl = 'http://localhost/lautro/portofolio/src/system/api/User.php'
 
     return new Promise((resolve, reject ) => {
 
-        fetch(BaseUrl+type,{
-            method: 'POST',
-            body: JSON.stringify(userData)
+        fetch(BaseUrl)
+        .then(Response => Response.json())
+        .then(function (data){
+            console.log(data);
         })
-        .then((response) => response.json())
-        .then((responseJson) => {
-            resolve(responseJson);
-        })
-        .catch((error) => {
-            reject(error);
-        })
-    })
+        
+    });
 
 }
