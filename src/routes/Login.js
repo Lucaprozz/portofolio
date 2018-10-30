@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import {PostData} from '../services/PostData'
 import {Redirect} from 'react-router-dom'
 class Login extends Component{
 
