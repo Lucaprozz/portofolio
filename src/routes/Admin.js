@@ -1,12 +1,20 @@
 import React, { Component } from 'react'
 import {Redirect} from 'react-router-dom'
-localStorage.clear('userToken')
 
 class Admin extends Component{
+
+    logout(){
+        localStorage.clear('userToken')
+        window.location = '/'
+    }
+
     render(){
         if(localStorage.getItem('userToken') === 'tok3n-1S-19'){
             return(
-                <p>Admin Dashboard</p>
+                <main>
+                    <p>Admin Dashboard</p>
+                    <button onClick={this.logout}>Logout</button>
+                </main>
             )
         } else {
             return(
