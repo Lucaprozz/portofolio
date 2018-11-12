@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 class Header extends Component{
     render(){
         return(
-            <header className='header'>
+            <header className='header'> 
                 <nav className='nav'>
                     <ul className='navigation'>
                         <li className='navigation__list'><NavLink exact={true} activeClassName='is-active' className='navigation__link' to='/'>Home</NavLink></li>
