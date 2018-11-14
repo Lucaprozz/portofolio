@@ -3,14 +3,6 @@
     grid-template-columns: repeat(3,1fr);
     background:linear-gradient(to right,darkcyan,rgb(29,52,97),rgb(29,52,97));
     padding: 2rem;
-    border-bottom: 3px solid black;
-}
-.header-main{
-    grid-column: 1;
-
-    &__name{
-        color: red;
-    }
 }
 .nav{
     grid-column:3;
