@@ -3,12 +3,14 @@ import './content.scss'
 class Content extends Component{
     render(){
         return(
-            <section>
-                <div>
-                    <img src='' alt='Profile-image'/>
+            <section className='content'>
+                <div className='image-container'>
+                    <img src='' alt='Profile-image' className='image-container__image' />
                 </div>
-                <div>
+                <div className='container'>
+                    <p className='container__text'>
 
+                    </p>
                 </div>
             </section>
         )
