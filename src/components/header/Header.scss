@@ -1,10 +1,11 @@
 @import '../../styles/main.scss';
+
 .header{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     background-color: $cyan;
     padding: 2rem;
-    border-bottom: 4px solid $darkcyan;
+    border-bottom: 4px solid $orange;
 }
 .nav{
     grid-column:3;
