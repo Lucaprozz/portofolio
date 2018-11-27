@@ -16,7 +16,7 @@ class Login extends Component{
     }
 
     componentDidMount() {
-        fetch('http://localhost/lautro/portofolio/src/system/api/User.php')
+        fetch('http://localhost/portofolio/src/system/api/User.php')
         .then(res => res.json())
         .then(json => {
             this.setState({
