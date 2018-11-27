@@ -7,8 +7,8 @@ class Header extends Component{
                 <nav className='nav'>
                     <ul className='navigation'>
                         <li className='navigation__list'><NavLink exact={true} activeClassName='is-active' className='navigation__link' to='/'>Home</NavLink></li>
-                        <li className='navigation__list'><NavLink activeClassName='is-active' className='navigation__link' to='/Projects'>Projects</NavLink></li>
-                        <li className='navigation__list'><NavLink activeClassName='is-active' className='navigation__link' to='/About'>About</NavLink></li>
+                        <li className='navigation__list'><NavLink activeClassName='is-active' className='navigation__link' to='/projects'>Projects</NavLink></li>
+                        <li className='navigation__list'><NavLink activeClassName='is-active' className='navigation__link' to='/about'>About</NavLink></li>
                     </ul>
                 </nav>
             </header>
