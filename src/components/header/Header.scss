@@ -3,9 +3,9 @@
 .header{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    background-color: $cyan;
+    background: linear-gradient(to left, $dark-cyan, $dark-cyan, $cyan);
     padding: 2rem;
-    border-bottom: 4px solid $orange;
+    border-bottom: 4px solid $dark-cyan;
 }
 .nav{
     grid-column:3;

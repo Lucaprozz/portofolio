@@ -1,5 +1,34 @@
 @import '../../styles/main.scss';
 
 .content{
-    background-color: $gray;
+    background-color: $cyan / 2;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    max-width: 1000px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-container{
+    background-color: $cyan; 
+
+    &__image{
+
+    }
+}
+
+.container{
+    background-color: $cyan;
+    max-width: 400px;
+
+    &__text{
+        
+    }
 }
