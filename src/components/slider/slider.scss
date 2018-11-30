@@ -107,13 +107,7 @@
     animation-name: fade;
     animation-duration: 1.5s;
 }
-.footer{
-    width: 100%;
-    padding: 20px 0;
-    text-align: center;
-    background-color: #191919;
-    color: white;
-}
+
 @-webkit-keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
