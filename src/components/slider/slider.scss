@@ -1,0 +1,127 @@
+.bigtext{
+    padding: 1vw;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.fly{
+    position: absolute;
+    bottom: 1vw;
+    width: 100%;
+}
+.controls{
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    margin: auto auto;
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    border-color: white;
+}
+.controls:hover{
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    border-color: black;
+}
+.slider{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 500px;
+}
+.slider-text{
+    float: right;
+    color: white;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.slider-image{
+    width: 100%;
+    height: 100%;
+}
+.slider-one{
+    background-image: url('https://images.wallpaperscraft.com/image/everest_mountain_sky_tops_96976_1920x1080.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slider-two{
+    background-image: url("https://i.imgur.com/0r7qN8U.png");
+    background-size: cover;
+    background-position: center;
+}
+.slider-three{
+    background-image: url("https://i.imgur.com/NnzxG4S.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.slider-four{
+    background-image: url("https://www.stikkerbuilding.nl/wp-content/uploads/2014/10/valley-forest-panorama-1920x1080.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.slider-five{
+    background-image: url("http://www.flabber.nl/sites/default/files/attachments/4-als-de-matrix-echt-is-zullen-de-robots-zich-wel-zorgen-hebben-gemaakt-toen-de-film-uitkwam.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.prev, .next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    margin: auto auto;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+}
+
+.next {
+    right: 0;
+}
+.prev{
+    left: 0 ;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.footer{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #191919;
+    color: white;
+}
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
